@@ -15,3 +15,25 @@ void FillArray(string[] array)
         array[i] = Console.ReadLine();
     }
 }
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+string[] CheckArray(string[] array)
+{
+    int a = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= 3) a++;
+    }
+    string[] temp = new string[a];
+    int j = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= 3)
+        {
+            temp[j] = array[i];
+            j++;
+        }
+    }
+    return temp;
+}
