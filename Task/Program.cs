@@ -5,6 +5,9 @@ Console.Write("\nВведите кол-во элементов массива: "
 int massive = Convert.ToInt32(Console.ReadLine());
 string[] array = new string[massive];
 
+FillArray(array);
+PrintArray(CheckArray(array));
+
 //-----------------------------------------------------------------------------------------------------------------------------------------------------
 
 void FillArray(string[] array)
