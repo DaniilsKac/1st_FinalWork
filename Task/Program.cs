@@ -5,3 +5,13 @@ Console.Write("\nВведите кол-во элементов массива: "
 int massive = Convert.ToInt32(Console.ReadLine());
 string[] array = new string[massive];
 
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+void FillArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"Введите {i + 1} элемент массива: ");
+        array[i] = Console.ReadLine();
+    }
+}
